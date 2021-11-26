@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CityCenter</title>
+        
+        <link rel="stylesheet" href="style.css">
+        
+
+    </head>
+    
+    <body>
+        <div class="one">
+        <div class="start">
+            <u><h1><font size="15" face="arial" color="Indigo"><b><font color="orange">C</font>ity<font color="orange">C</font>enter</b></font></h1>
+            </u>
+            <h2><font color="Indigo">Fashion . Food . Fun</font></h2>
+        </div>
+        <div class="nev" id="navbar">
+        <ul>
+            <li class="home"><a class="active" href="Task1.html">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#dine">DINE</a></li>
+            <li><a href="#events">EVENTS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="#brands">BRANDS</a></li>
+            <div class="search-container">
+                <form action="#">
+                  <input type="text" placeholder="Search.." name="search">
+                </form>
+              </div>
+        </ul>
+        </div> 
+        </div>
+
+        <img src="img/s1.jpg" width="100%" height="400">
+        
+        <h1 class="two" id="about"><u>ABOUT US</u></h1>
+        <p> A mall or shopping centre is a large building that is full of many smaller shops and stores. It is different from earlier markets or bazaars because most of the shops are not little booths or stalls in one big open area. Each store has its own space with walls. Most of their entrances face a central walking area inside the building.
+            A shopping centre is a collection of independent retail stores, services, and a parking area conceived, constructed, and maintained by a management firm as a unit. Shopping centres may also contain restaurants, banks, theatres, professional offices, service stations, and other establishments.
+        </p>
+
+        <h1 class="two" id="dine"><u>DINE</u></h1>
+        <div class="dine">
+            <div class="d">
+                <img src="img/cafe.jpg" width="100%" height="350">
+                <div class="d1">
+                    <h3>CAFE</h3> 
+                    <button>More..</button>
+                 </div>
+            </div>
+            <div class="d">
+                <img src="img/fast.jpg" width="100%" height="350">
+                <div class="d1">
+                    <h3>FAST FOOD</h3> 
+                   <button>More..</button>
+                </div>
+            </div>
+            <div class="d">
+                <img src="img/ice2.jpg" width="100%" height="350">
+                <div class="d1">
+                    <h3>ICECREME</h3> 
+                    <button>More..</button> 
+              </div>
+            </div>
+            <div class="d">
+                <img src="img/italian.jpg" width="100%" height="350">
+                <div class="d1">
+                    <h3>ITAlliAN FOOD</h3> 
+                   <button>More..</button>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <br>
+        <h1 class="two" id="events"><u>EVENTS</u></h1>
+        <br>
+        <div class="event">
+            <img src="img/abc.jpg" width="49.40%" height="450">
+            <img src="img/cristmas.png" width="49.40%" height="450">
+            <img src="img/abc2.jpg" width="49.40%" height="450">
+            <img src="img/fest.jpg" width="49.40%" height="450">
+            </div>
+
+        
+        <h1 class="two" id="contact"><u>CONTACT US</u></h1>
+        <div class="contact">
+            <div class="con1">
+                <img src="img/map1.png"><br>
+            </div>
+            <div class="con2">
+                <div class="row">
+                    <h2>ADDRESS</h2>
+                    <p>
+                        CityCenter XYZ, 1234 <br>ABC Road,ABC <br> XYZ, Maharashtra-1234
+                    </p>
+                </div>
+                <div class="row">
+                    <h2>FOLLOW US</h2>
+                    <img src="img/fb.png">
+                    <img src="img/insta.jpg">
+                    <img src="img/twitter.png">
+                    <img src="img/google.jpg">
+                </div>
+                <div class="row">
+                    <h2>CONTACT US</h2>
+                    <p>
+                        cityCenter@skype <br> 
+                        cityCenter@xyz.com 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <br><br><br><br>
+        <br><br><br><br><br><br>
+        
+
+        <h1 class="two" id="brands"><u>BRANDS</u></h1>
+           <marquee class="brands" behavior="scroll" direction="left" scrollamount="10" >
+               <img src="img/9_Nike_400.png">
+               <img src="img/127.png">
+               <img src="img/Microsoft-Logo-Design.png">
+               <img src="img/rolex.png">
+               <img src="img/McDonalds_Logo.jpg">
+               <img src="img/samsung-logo.png">
+               <img src="img/the_logo_story_01122014_596x334.jpg">
+               <img src="img/Chanel-Logo-min.png">
+               <img src="img/Gucci-Logo-min.png">
+
+            </marquee>
+
+    
+
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+            
+
+
+    </body>
+</html>
